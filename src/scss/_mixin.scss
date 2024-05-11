@@ -1,0 +1,25 @@
+@mixin flexbox($align: null, $justify: null) {
+    display: flex;
+
+    @if $justify {
+        justify-content: $justify;
+    }
+
+    @if $align {
+        align-items: $align;
+    }
+}
+@mixin before-after($width, $height, $top, $left) {
+    content: "";
+    position: absolute;
+    width: $width;
+    height: $height;
+    top: $top;
+    left: $left;
+}
+@mixin textGradient {
+    background: $primary-gradient;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

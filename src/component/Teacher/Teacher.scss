@@ -1,0 +1,101 @@
+.teacher {
+    margin-top: 100px;
+    position: relative;
+    overflow: hidden;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(0, 102, 255, 0.3) 0%, rgba(0, 64, 160, 0) 94.5%, rgba(0, 71, 255, 0) 100%);
+    &::before {
+        @include before-after(100%, 100%, 70%, 50%);
+        z-index: -2;
+        transform: translate(-50%, -50%);
+        background: url("../../assets/teacher/circle.png") no-repeat center;
+    }
+    &-box {
+        margin-top: 100px;
+        position: relative;
+    }
+    &-item {
+        position: absolute;
+        top: var(--top);
+        left: var(--left);
+        background-color: #fff;
+        padding: 12px;
+        border-radius: 30px;
+        font-size: 11px;
+        animation: experience 5s infinite alternate;
+        animation-delay: var(--delay);
+        &::before {
+            @include before-after(20px, 20px, -10px, -5px);
+            background: $primary-gradient;
+            border-radius: 30px;
+        }
+        span {
+            font-weight: 700;
+            @include textGradient;
+        }
+    }
+    &-thumb {
+        position: relative;
+        width: 25%;
+        margin: 0 auto;
+        img {
+            border-radius: 170px;
+            position: relative;
+        }
+        &:before {
+            @include before-after(103%, 103%, 50%, 50%);
+            transform: translate(-50%, -50%);
+            background: $primary-gradient;
+            border-radius: 170px;
+        }
+    }
+    &-info {
+        &-slide {
+            background-color: #ffffff2b;
+
+            overflow: hidden;
+            white-space: nowrap;
+            position: absolute;
+            padding: 15px 15px 10px;
+            top: 70%;
+            left: -10%;
+            width: 120%;
+            transform: rotate(10deg);
+            z-index: -1;
+
+            &.secondary {
+                top: 70%;
+                transform: rotate(-10deg);
+                span {
+                    animation-direction: alternate-reverse;
+                }
+            }
+            span {
+                color: rgba(255, 255, 255, 0.3);
+                display: inline-flex;
+                align-items: center;
+                margin: 0 20px;
+                animation: 50s slide infinite linear alternate;
+                img {
+                    width: 20px;
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+}
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-3000px);
+    }
+}
+@keyframes experience {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-10px);
+    }
+}

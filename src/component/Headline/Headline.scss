@@ -1,0 +1,45 @@
+.headline {
+    margin: 30px 0;
+    text-align: center;
+    color: #fff;
+    &-top {
+        border: 0.5px solid #ffffff1a;
+        display: inline-flex;
+        align-items: center;
+        padding: 10px 16px;
+        border-radius: 30px;
+        font-weight: 600;
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.08) 100%), rgba(0, 105, 255, 0.1);
+        img {
+            width: 20px;
+            margin-right: 10px;
+        }
+    }
+    &-title {
+        font-size: 48px;
+        font-weight: 700;
+        margin: 20px 0;
+        @media (max-width: 991px) {
+            font-size: 32px;
+        }
+        span {
+            background: $primary-gradient;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+    &-desc {
+        font-size: 20px;
+        width: 50%;
+        margin: 0 auto;
+        line-height: 30px;
+        @media (max-width: 991px) {
+            width: 90%;
+        }
+        @media (max-width: 575px) {
+            width: 100%;
+            font-size: 16px;
+        }
+    }
+}
