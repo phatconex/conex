@@ -20,7 +20,7 @@ const Teacher = () => {
         );
     }
     return (
-        <div className="teacher">
+        <div className="teacher" id="giang-vien">
             <Container>
                 <Headline
                     sub="Giảng viên"
@@ -29,15 +29,9 @@ const Teacher = () => {
                             Giảng viên <span>Conex</span> là ai
                         </>
                     }
-                    desc="Mình là Phát, là Founder Conex, có 5 năm kinh nghiệm lập trình Frontend và hơn 2 năm giảng dạy Frontend tại các trung tâm dạy lập trình"
+                    desc="Mình là Phát, là Founder Conex, mình tốt nghiệp KHTN, có 5 năm kinh nghiệm lập trình Frontend và hơn 2 năm giảng dạy Frontend tại các trung tâm dạy lập trình"
                 ></Headline>
                 <div className="teacher-box">
-                    <div className="teacher-thumb">
-                        <img
-                            src="https://scontent.fhan4-6.fna.fbcdn.net/v/t39.30808-6/343516696_2241864546005759_7230244519370495171_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=v_b4vpwW1dYQ7kNvgEgcwyY&_nc_ht=scontent.fhan4-6.fna&oh=00_AYABJuwoloOAPhRw7eI5yfChuQKhYi7kFHFuNw7ezbs_Ow&oe=66449F34"
-                            alt=""
-                        />
-                    </div>
                     <div className="teacher-list">
                         <div className="teacher-item" style={{ "--top": "-50px", "--left": "30%", "--delay": "0.2s" }}>
                             <span>5 năm kinh nghiệm Frontend</span>
@@ -57,6 +51,12 @@ const Teacher = () => {
                         <div className="teacher-item" style={{ "--top": "80%", "--left": "68%", "--delay": "1s" }}>
                             <span>Tốt nghiệp Khoa Học Tự Nhiên</span>
                         </div>
+                    </div>
+                    <div className="teacher-thumb">
+                        <img
+                            src="https://scontent.fhan4-6.fna.fbcdn.net/v/t39.30808-6/343516696_2241864546005759_7230244519370495171_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=v_b4vpwW1dYQ7kNvgEgcwyY&_nc_ht=scontent.fhan4-6.fna&oh=00_AYABJuwoloOAPhRw7eI5yfChuQKhYi7kFHFuNw7ezbs_Ow&oe=66449F34"
+                            alt=""
+                        />
                     </div>
                 </div>
             </Container>

@@ -1,16 +1,32 @@
 .project {
     margin-top: 100px;
+    @media (max-width: 991px) {
+        margin-top: 32px;
+    }
     &-list {
         column-count: 3;
         column-gap: 24px;
+        @media (max-width: 767px) {
+            column-count: 2;
+            column-gap: 12px;
+        }
     }
     &-item {
-        break-inside: avoid;
         position: relative;
         margin-bottom: 24px;
         cursor: pointer;
         display: block;
+        // &::before {
+        //     @include before-after(100%, 100%, 0, 0);
+        //     background: #101cfd75;
+        // }
+        @media (max-width: 767px) {
+            margin-bottom: 12px;
+        }
         &:hover {
+            &::before {
+                opacity: 0;
+            }
             .project-item-info {
                 opacity: 1;
                 h3 {
@@ -34,6 +50,7 @@
             padding: 20px;
             opacity: 0;
             transition: 0.2s;
+
             h3 {
                 font-size: 22px;
                 margin-bottom: 0;
@@ -56,14 +73,19 @@
 
 .card-project {
     display: block;
+    margin-bottom: 20px;
     h3 {
         font-weight: 500;
-        font-size: 20px;
+        font-size: 16px;
+        margin-bottom: 0;
     }
     p {
         font-weight: 300;
+        margin-top: 5px;
     }
     img {
+        height: 250px;
+        object-fit: cover;
         transition: 0.3s;
     }
     &:hover {

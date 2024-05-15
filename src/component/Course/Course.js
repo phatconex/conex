@@ -5,7 +5,7 @@ import CardCourse from "./CardCourse";
 import arrDataCourse from "./datacourse";
 const Course = () => {
     return (
-        <Container>
+        <Container id="khoa-hoc">
             <Headline
                 sub="Khóa học"
                 title={
@@ -19,7 +19,15 @@ const Course = () => {
             <Row>
                 {arrDataCourse.map((item) => (
                     <Col lg={6} key={item.id}>
-                        <CardCourse name={item.name} desc={item.desc} time={item.time} timeLine={item.timeline} price={item.price}></CardCourse>
+                        <CardCourse
+                            id={item.id}
+                            name={item.name}
+                            img={item.img}
+                            desc={item.desc}
+                            time={item.time}
+                            timeLine={item.timeline}
+                            price={item.price}
+                        ></CardCourse>
                     </Col>
                 ))}
             </Row>

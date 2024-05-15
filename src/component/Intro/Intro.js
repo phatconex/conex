@@ -20,8 +20,8 @@ const Intro = () => {
                         bạn phát triển các kĩ năng chuyên nghành và kĩ năng mềm
                     </p>
                     <div className="intro-button">
-                        <Button text="Các khóa học"></Button>
-                        <Button text="Đăng ký học thử" secondary={true}></Button>
+                        <Button text="Các khóa học" link="#khoa-hoc"></Button>
+                        <Button text="Đăng ký học thử" link="#lien-he" secondary={true}></Button>
                     </div>
                 </div>
             </Container>

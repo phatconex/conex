@@ -26,27 +26,27 @@ const Header = () => {
                 </div>
 
                 <ul className={`header-menu ${showMenu && "active"}`} ref={menuRef}>
+                    <li style={{ "--delay": "0.1s" }}>
+                        <a href="#khoa-hoc">Khóa học</a>
+                    </li>
                     <li style={{ "--delay": "0.2s" }}>
-                        <a href="">Khóa học</a>
+                        <a href="#do-an">Đồ án</a>
                     </li>
                     <li style={{ "--delay": "0.3s" }}>
-                        <a href="">Học thử</a>
+                        <a href="#danh-gia">Đánh giá</a>
                     </li>
                     <li style={{ "--delay": "0.4s" }}>
-                        <a href="">Đồ án</a>
+                        <a href="#giang-vien">Giảng viên</a>
                     </li>
                     <li style={{ "--delay": "0.5s" }}>
-                        <a href="">Về Conex</a>
+                        <a href="#lien-he">Liên hệ</a>
                     </li>
                     <li style={{ "--delay": "0.6s" }}>
-                        <a href="">Giảng viên</a>
-                    </li>
-                    <li style={{ "--delay": "0.7s" }}>
-                        <a href="">Đánh giá</a>
+                        <a href="#lien-he">Học thử</a>
                     </li>
                 </ul>
                 <div className="header-button">
-                    <Button text="Các khóa học"></Button>
+                    <Button text="Các khóa học" link="#khoa-hoc "></Button>
                     <button className={`header-button-menu ${showMenu && "active"}`} ref={iconRef} onClick={() => setShowMenu(!showMenu)}>
                         <span></span>
                         <span></span>

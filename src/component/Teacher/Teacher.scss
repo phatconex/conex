@@ -1,17 +1,33 @@
 .teacher {
-    margin-top: 100px;
+    margin-top: 50px;
     position: relative;
     overflow: hidden;
+    padding-bottom: 100px;
     background: radial-gradient(50% 50% at 50% 50%, rgba(0, 102, 255, 0.3) 0%, rgba(0, 64, 160, 0) 94.5%, rgba(0, 71, 255, 0) 100%);
+    @media (max-width: 991px) {
+        margin-top: 40px;
+    }
     &::before {
-        @include before-after(100%, 100%, 70%, 50%);
+        @include before-after(100%, 100%, 63%, 50%);
         z-index: -2;
         transform: translate(-50%, -50%);
         background: url("../../assets/teacher/circle.png") no-repeat center;
     }
     &-box {
-        margin-top: 100px;
+        margin-top: 120px;
         position: relative;
+        @media (max-width: 991px) {
+            margin-top: 20px;
+        }
+    }
+    &-list {
+        @media (max-width: 991px) {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        @media (max-width: 575px) {
+            display: none;
+        }
     }
     &-item {
         position: absolute;
@@ -23,10 +39,21 @@
         font-size: 11px;
         animation: experience 5s infinite alternate;
         animation-delay: var(--delay);
+        @media (max-width: 991px) {
+            position: relative;
+            top: unset;
+            left: unset;
+            display: inline-block;
+            margin: 8px;
+            animation: none;
+        }
         &::before {
-            @include before-after(20px, 20px, -10px, -5px);
+            @include before-after(20px, 20px, -5px, -5px);
             background: $primary-gradient;
             border-radius: 30px;
+            @media (max-width: 991px) {
+                display: none;
+            }
         }
         span {
             font-weight: 700;
@@ -37,6 +64,12 @@
         position: relative;
         width: 25%;
         margin: 0 auto;
+        @media (max-width: 991px) {
+            width: 50%;
+        }
+        @media (max-width: 575px) {
+            width: 70%;
+        }
         img {
             border-radius: 170px;
             position: relative;
@@ -56,14 +89,13 @@
             white-space: nowrap;
             position: absolute;
             padding: 15px 15px 10px;
-            top: 70%;
+            top: 60%;
             left: -10%;
             width: 120%;
             transform: rotate(10deg);
             z-index: -1;
 
             &.secondary {
-                top: 70%;
                 transform: rotate(-10deg);
                 span {
                     animation-direction: alternate-reverse;

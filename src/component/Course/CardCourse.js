@@ -8,7 +8,7 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 import { toast } from "react-toastify";
 
-const CardCourse = ({ name, desc, time, timeLine, price }) => {
+const CardCourse = ({ id, name, desc, time, timeLine, price, img }) => {
     const [show, setShow] = useState(false);
 
     const handleClose = () => setShow(false);
@@ -57,10 +57,10 @@ const CardCourse = ({ name, desc, time, timeLine, price }) => {
         <>
             <div className="card-course" onClick={handleShow}>
                 <div className="card-course-top">
-                    <img src={img_course} alt="" />
+                    <img src={img} alt="" />
                     <div className="card-course-info">
                         <p>{desc}</p>
-                        <p>01</p>
+                        <p>0{id}</p>
                     </div>
                 </div>
                 <div className="card-course-title">
@@ -72,6 +72,9 @@ const CardCourse = ({ name, desc, time, timeLine, price }) => {
                 </div>
             </div>
             <Modal show={show} onHide={handleClose} size="md" centered>
+                <div className="modal-close" onClick={handleClose}>
+                    X
+                </div>
                 <Headline
                     sub="Lộ trình"
                     title={
@@ -110,11 +113,7 @@ const CardCourse = ({ name, desc, time, timeLine, price }) => {
                                         <li key={index}>- {baitap}</li>
                                     ))}
                                 </ul>
-                                <div className="modal-total">
-                                    {item.toTal.map((total, index) => (
-                                        <span key={index}>{total}</span>
-                                    ))}
-                                </div>
+                                <div className="modal-total">{item.toTal && item.toTal.map((total, index) => <span key={index}>{total}</span>)}</div>
                             </Accordion.Body>
                         </Accordion.Item>
                     ))}
