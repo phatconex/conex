@@ -69,7 +69,7 @@ const Register = () => {
                 ></Headline>
                 <div className="register-box">
                     <Row>
-                        <Col lg={5}>
+                        <Col lg={5} id="lien-he">
                             <div className="register-left">
                                 <img src={logo} alt="logo-conex" className="register-logo" />
                                 <h3 className="register-title">Thông tin liên hệ</h3>
@@ -100,7 +100,7 @@ const Register = () => {
                                 </div>
                             </div>
                         </Col>
-                        <Col lg={7}>
+                        <Col lg={7} id="hoc-thu">
                             <form onSubmit={formik.handleSubmit} className="register-form">
                                 <Row>
                                     <Col lg={6}>

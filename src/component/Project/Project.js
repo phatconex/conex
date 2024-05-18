@@ -10,7 +10,7 @@ const Project = () => {
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
     return (
-        <div className="project">
+        <div className="project" id="do-an">
             <Container>
                 <Headline
                     sub="Đồ án"

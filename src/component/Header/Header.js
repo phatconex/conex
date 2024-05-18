@@ -52,7 +52,7 @@ const Header = () => {
                         </a>
                     </li>
                     <li style={{ "--delay": "0.6s" }}>
-                        <a onClick={() => setShowMenu(false)} href="#lien-he">
+                        <a onClick={() => setShowMenu(false)} href="#hoc-thu">
                             Học thử
                         </a>
                     </li>

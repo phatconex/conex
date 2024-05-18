@@ -49,7 +49,7 @@ const Student = () => {
     };
 
     return (
-        <div className="student">
+        <div className="student" id="danh-gia">
             <Container>
                 <Row>
                     <Col lg={3}>
