@@ -26,7 +26,9 @@ const Course = () => {
                             desc={item.desc}
                             time={item.time}
                             timeLine={item.timeline}
-                            price={item.price}
+                            price_offline={item.price_offline}
+                            price_online={item.price_online}
+                            price_tragop={item.price_tragop}
                         ></CardCourse>
                     </Col>
                 ))}

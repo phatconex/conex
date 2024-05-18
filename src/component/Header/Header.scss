@@ -24,6 +24,7 @@
             text-align: right;
             transition: 0.3s;
             z-index: 9999;
+            overflow-x: hidden;
         }
         &.active {
             li {

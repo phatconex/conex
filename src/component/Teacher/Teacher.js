@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { Container } from "react-bootstrap";
 import Headline from "../Headline/Headline";
 import star from "../../assets/teacher/star.png";
+import teacher_img from "../../assets/teacher/teacher.jpg";
 const Teacher = () => {
     const elementSpan1 = [];
     const elementSpan2 = [];
@@ -53,10 +54,7 @@ const Teacher = () => {
                         </div>
                     </div>
                     <div className="teacher-thumb">
-                        <img
-                            src="https://scontent.fhan4-6.fna.fbcdn.net/v/t39.30808-6/343516696_2241864546005759_7230244519370495171_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=v_b4vpwW1dYQ7kNvgEgcwyY&_nc_ht=scontent.fhan4-6.fna&oh=00_AYABJuwoloOAPhRw7eI5yfChuQKhYi7kFHFuNw7ezbs_Ow&oe=66449F34"
-                            alt=""
-                        />
+                        <img src={teacher_img} alt="teacher_conex" />
                     </div>
                 </div>
             </Container>

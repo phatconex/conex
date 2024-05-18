@@ -5,6 +5,7 @@ import Project from "./component/Project/Project";
 import Student from "./component/Student/Student";
 import Teacher from "./component/Teacher/Teacher";
 import Register from "./component/Register/Register";
+import Footer from "./component/Footer/Footer";
 import { ToastContainer } from "react-toastify";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "react-toastify/dist/ReactToastify.css";
@@ -19,6 +20,7 @@ function App() {
             <Student></Student>
             <Teacher></Teacher>
             <Register></Register>
+            <Footer></Footer>
             <ToastContainer />
         </>
     );

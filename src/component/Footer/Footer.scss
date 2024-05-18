@@ -1,0 +1,86 @@
+.footer {
+    &-scrolltop {
+        color: rgba(255, 255, 255, 0.5);
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        width: 50px;
+        height: 50px;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        transition: 0.5s;
+        cursor: pointer;
+        opacity: 0;
+        z-index: 9999;
+        background-color: transparent;
+        &.active {
+            opacity: 1;
+        }
+    }
+    &-navigation {
+        position: fixed;
+        top: 50%;
+        right: 30px;
+        transform: translateY(-50%);
+        border: 0.5px solid rgba(255, 255, 255, 0.3);
+        padding: 10px 17px;
+        border-radius: 100px;
+        z-index: 9999;
+        opacity: 0;
+        transition: 0.5s;
+        text-align: center;
+        &.active {
+            opacity: 1;
+        }
+        @media (max-width: 991px) {
+            display: none;
+        }
+        a {
+            display: block;
+            margin: 25px 0;
+            position: relative;
+            &:hover {
+                span {
+                    opacity: 1;
+                    visibility: visible;
+                    color: #fff;
+                }
+            }
+        }
+        svg {
+            color: rgba(255, 255, 255, 0.5);
+            transition: 0.3s;
+        }
+        span {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: -120px;
+            text-align: right;
+            padding: 5px;
+            width: 100px;
+            text-align: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.3s;
+            background: $primary-gradient;
+            border-radius: 100px;
+            &::after {
+                content: "";
+                display: block;
+                position: absolute;
+                right: -8px;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 0;
+                height: 0;
+                border-top: 5px solid transparent;
+                border-left: 10px solid $secondary-color;
+                border-bottom: 5px solid transparent;
+            }
+        }
+    }
+}

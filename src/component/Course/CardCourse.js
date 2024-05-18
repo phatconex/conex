@@ -8,7 +8,7 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 import { toast } from "react-toastify";
 
-const CardCourse = ({ id, name, desc, time, timeLine, price, img }) => {
+const CardCourse = ({ id, name, desc, time, timeLine, price_offline, price_online, price_tragop, img }) => {
     const [show, setShow] = useState(false);
 
     const handleClose = () => setShow(false);
@@ -88,11 +88,19 @@ const CardCourse = ({ id, name, desc, time, timeLine, price, img }) => {
                         <span>Thời lượng:</span> <span>{time}</span>
                     </div>
                     <div>
-                        <span>Hình thức:</span> <span>OFFLINE/ONLINE</span>
+                        <span>Học phí Offline:</span> <span>{price_offline}</span>
                     </div>
                     <div>
-                        <span>Học phí:</span> <span>{price}</span>
+                        <span>Học phí Online:</span> <span>{price_online}</span>
                     </div>
+                </div>
+                <div className="modal-more">
+                    <p>
+                        Trả góp: <span>{price_tragop} / 10 buổi</span>
+                    </p>
+                    <p>
+                        Giảm trực tiếp <span>500.000 VNĐ</span> cho sinh viên
+                    </p>
                 </div>
                 <Accordion>
                     {timeLine.map((item, index) => (

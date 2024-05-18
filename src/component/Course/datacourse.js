@@ -6,7 +6,9 @@ const arrDataCourse = [
         name: "FRONTEND NEWBIE",
         desc: "Khóa học phù hợp cho các bạn mới tiếp xúc với web và Frontend cũng như các bạn cần nâng cao kiến thức Frontend",
         time: "40 buổi",
-        price: "10,500,000 VNĐ",
+        price_offline: "11.000.000 VNĐ",
+        price_online: "9.500.000 VNĐ",
+        price_tragop: "2.900.000 VNĐ",
         img: course_1,
         timeline: [
             {
@@ -103,7 +105,9 @@ const arrDataCourse = [
         name: "REACT JS",
         desc: "Khóa học giúp bạn làm chủ thư viện js phổ biến nhất hiện nay cũng như thành thạo sử dụng các hook trong react",
         time: "30 buổi",
-        price: "9,500,000 VNĐ",
+        price_offline: "9.500.000 VNĐ",
+        price_online: "8.000.000 VNĐ",
+        price_tragop: "3.600.000 VNĐ",
         img: course_2,
         timeline: [
             {

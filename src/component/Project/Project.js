@@ -21,6 +21,9 @@ const Project = () => {
                     }
                     desc="Những project mà các học viên của CONEX đã thực hiện"
                 ></Headline>
+                <div className="text-center mb-4" onClick={handleShow}>
+                    <Button text="Xem tất cả project" link="javascript:;"></Button>
+                </div>
                 <div className="project-list">
                     {dataProject.map(
                         (item) =>
@@ -35,9 +38,7 @@ const Project = () => {
                             )
                     )}
                 </div>
-                <div className="text-center mt-3" onClick={handleShow}>
-                    <Button text="Xem tất cả project" link="javascript:;"></Button>
-                </div>
+
                 <Modal show={show} onHide={handleClose} size="xl" centered>
                     <div className="modal-close" onClick={handleClose}>
                         X
@@ -48,8 +49,8 @@ const Project = () => {
                     <Modal.Body>
                         <Row>
                             {dataProject.map((item) => (
-                                <Col lg={4}>
-                                    <a href={item.link} target="_blank" className="card-project" key={item.id}>
+                                <Col lg={4} key={item.id}>
+                                    <a href={item.link} target="_blank" className="card-project">
                                         <img src={item.img} alt={item.name} />
 
                                         <h3>{item.name}</h3>

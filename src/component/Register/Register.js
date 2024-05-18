@@ -85,16 +85,16 @@ const Register = () => {
                                     </li>
                                 </ul>
                                 <div className="register-social">
-                                    <a href="">
+                                    <a href="https://www.facebook.com/conexfrontend" target="_blank">
                                         <FontAwesomeIcon icon={faSquareFacebook} /> Fanpage Conex
                                     </a>
-                                    <a href="">
+                                    <a href="https://www.facebook.com/groups/donglaptrinhconex" target="_blank">
                                         <FontAwesomeIcon icon={faSquareFacebook} /> Group tự học miễn phí
                                     </a>
-                                    <a href="">
+                                    <a href="https://www.youtube.com/channel/UCHmvvamvQdlyvz-HeLIylvw" target="_blank">
                                         <FontAwesomeIcon icon={faYoutube} /> Kênh youtube tự học
                                     </a>
-                                    <a href="">
+                                    <a href="https://www.tiktok.com/@hltpat" target="_blank">
                                         <FontAwesomeIcon icon={faTiktok} /> Kênh tiktok tự học
                                     </a>
                                 </div>

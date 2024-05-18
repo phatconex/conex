@@ -27,26 +27,38 @@ const Header = () => {
 
                 <ul className={`header-menu ${showMenu && "active"}`} ref={menuRef}>
                     <li style={{ "--delay": "0.1s" }}>
-                        <a href="#khoa-hoc">Khóa học</a>
+                        <a onClick={() => setShowMenu(false)} href="#khoa-hoc">
+                            Khóa học
+                        </a>
                     </li>
                     <li style={{ "--delay": "0.2s" }}>
-                        <a href="#do-an">Đồ án</a>
+                        <a onClick={() => setShowMenu(false)} href="#do-an">
+                            Đồ án
+                        </a>
                     </li>
                     <li style={{ "--delay": "0.3s" }}>
-                        <a href="#danh-gia">Đánh giá</a>
+                        <a onClick={() => setShowMenu(false)} href="#danh-gia">
+                            Đánh giá
+                        </a>
                     </li>
                     <li style={{ "--delay": "0.4s" }}>
-                        <a href="#giang-vien">Giảng viên</a>
+                        <a onClick={() => setShowMenu(false)} href="#giang-vien">
+                            Giảng viên
+                        </a>
                     </li>
                     <li style={{ "--delay": "0.5s" }}>
-                        <a href="#lien-he">Liên hệ</a>
+                        <a onClick={() => setShowMenu(false)} href="#lien-he">
+                            Liên hệ
+                        </a>
                     </li>
                     <li style={{ "--delay": "0.6s" }}>
-                        <a href="#lien-he">Học thử</a>
+                        <a onClick={() => setShowMenu(false)} href="#lien-he">
+                            Học thử
+                        </a>
                     </li>
                 </ul>
                 <div className="header-button">
-                    <Button text="Các khóa học" link="#khoa-hoc "></Button>
+                    <Button text="Các khóa học" link="#khoa-hoc"></Button>
                     <button className={`header-button-menu ${showMenu && "active"}`} ref={iconRef} onClick={() => setShowMenu(!showMenu)}>
                         <span></span>
                         <span></span>
