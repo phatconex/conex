@@ -49,7 +49,7 @@ const Project = () => {
                     <Modal.Body>
                         <Row>
                             {dataProject.map((item) => (
-                                <Col lg={4} key={item.id}>
+                                <Col xs={6} lg={4} key={item.id}>
                                     <a href={item.link} target="_blank" className="card-project">
                                         <img src={item.img} alt={item.name} />
 

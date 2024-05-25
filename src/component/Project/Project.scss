@@ -64,6 +64,9 @@
                 transform: translateY(-30px);
                 transition: 0.2s;
                 transition-delay: 0.2s;
+                @media (max-width: 575px) {
+                    font-size: 14px;
+                }
             }
             p {
                 font-weight: 300;
@@ -71,6 +74,9 @@
                 transform: translateY(-30px);
                 transition: 0.2s;
                 transition-delay: 0.3s;
+                @media (max-width: 575px) {
+                    font-size: 12px;
+                }
             }
         }
     }
@@ -83,16 +89,25 @@
         font-weight: 500;
         font-size: 16px;
         margin-bottom: 0;
+        @media (max-width: 575px) {
+            font-size: 14px;
+        }
     }
     p {
         font-weight: 300;
         margin-top: 5px;
+        @media (max-width: 575px) {
+            font-size: 12px;
+        }
     }
     img {
         border-radius: 8px;
         height: 250px;
         object-fit: cover;
         transition: 0.3s;
+        @media (max-width: 575px) {
+            height: 150px;
+        }
     }
     &:hover {
         img {
